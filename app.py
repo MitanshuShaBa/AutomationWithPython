@@ -21,10 +21,11 @@ def process_workbook(file):
     chart.add_data(values)
     sheet.add_chart(chart, 'E2')
 
-    wb.save(file)
+    wb.save('transac.xlsx')
 
 
 filename = input("Enter name of file")
 filename += '.xlsx'
 # cant edit files which are committed on github
+# so save it locally under different name
 process_workbook(filename)
