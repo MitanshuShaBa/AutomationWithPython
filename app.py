@@ -21,7 +21,7 @@ def process_workbook(file):
     chart.add_data(values)
     sheet.add_chart(chart, 'E2')
 
-    wb.save('transac.xlsx')
+    wb.save('transactions_edited.xlsx')
 
 
 filename = input("Enter name of file")
